@@ -1,12 +1,23 @@
 <div class="comments">
-    {{#each this}}
-    <section class="comment">
-        <div class="meta">
-            {{user.username}} commented on {{format_date createdAt}}
-        </div>
-        <div class="text">
-            {{comment_text}}
-        </div>
+  <br>
+  {{#each this}}
+    <section id="comment-section" class="comment">
+      {{log comment.id}}
+      <a href="/comment/{{id}}">{{contents}}</a>
+      <div class="meta">
+        {{user.username}} -  {{format_date date_created}}
+      </div>
+      {{!-- <p class="text">
+        {{contents}}
+      </p> --}}
     </section>
-    {{/each}}
+     {{!-- {{#if loggedIn}} --}}
+     {{log contents}}
+ 
+    {{!-- {{/if}} --}}
+  {{/each}}
 </div>
+
+{{!-- {{#if loggedIn}} --}}
+{{!-- <script src="/js/comment.js"></script> --}}
+{{!-- {{/if}} --}}

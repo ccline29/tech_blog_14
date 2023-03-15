@@ -1,21 +1,28 @@
-section class="new-post-section">
-            <a href="/dashboard/new/"><button id="create-post" class="button is-primary is-pulled-right">create post</button></a>
-
-</section>
-
-{{#if posts.length}}
-<section>
-    <h2>Your Dashboard</h2>
-    <ul class="post-list">
+<div>
+    <h2>My Posts</h2>
+    {{#if posts.length}}
+    <div>
         {{#each posts as |post|}}
-        <li>
-            {{> post-info post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">edit post</a>
-        </li>
-        {{/each}}
-    </ul>
-</section>
-{{/if}}
-
-
+       <p> {{post.title}} </p>
+        <p>{{post.contents}}</p>
+    </div>
+    {{/each}}
+    {{else}}
+    <h3>You do not have any posts at this time.</h3>
+    {{/if}}
+     <form class="form post-form">
+      <div class="form-group">
+        <label for="title">Post Title:</label>
+        <input class="form-input" type="text" id="title" />
+      </div>
+      <div class="form-group">
+        <label for="contents">content:</label>
+        <input class="form-input" type="password" id="contents" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Add Post</button>
+      </div>
+    </form>
+<script src="/js/dashboardAddPost.js"></script>
+</div>
 <script src="/javascript/add-post.js"></script>
