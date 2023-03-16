@@ -2,33 +2,33 @@ const { Post } = require('../models');
 
 const postdata = [
     {
-        "title": "Learing to Code",
-        "contents": "Learning to code can be difficult, but stick with it and practice practice practice.  Things will begin to make sense after you have a moment to let it sink in.",
-        "date_created": "10/18/2022",
+        "title": "Introduction to HTML",
+        "contents": "HTML is the foundation of the web.  It is the first thing you should learn when you start to code.  It is the building blocks of the web.",
+        "date_created": "10/16/2010",
         "user_id": 1
     },
     {
-        "title": "Mastering CSS",
-        "contents": "There are so many ways to make something look great.  Keep up the great work and study the new techniques and you will become a master at CSS in no time!",
-        "date_created": "10/17/2022",
+        "title": "Building a portfolio",
+        "contents": "You should build a portfolio to show off your skills.  It is a great way to get a job.  You can also use it to show off your skills to friends and family.",
+        "date_created": "10/17/2010",
         "user_id": 2
     },
     {
-        "title": "Gaining new ground in AI",
-        "contents": "With ChatGPT and GalelioAI things are moving quickly in the AI world.  Don't worry about your job though.  Companies will still need software developers for the foresseable future.",
-        "date_created": "07/07/2021",
+        "title": "Introduction to CSS",
+        "contents": "CSS is the next step in learning web development.  It is used to style your HTML.  It is a great way to make your website look great.",
+        "date_created": "07/07/2011",
         "user_id": 3
     },
     {
-        "title": "Generating Handlebar templates",
-        "contents": "Make sure to review the documentation and pracitce until you become a master.",
-        "date_created": "04/17/2020",
+        "title": "Introduction to JavaScript",
+        "contents": "JavaScript is the next step in learning web development.  It is used to make your website interactive.  It is a great way to make your website more dynamic.",
+        "date_created": "04/17/2012",
         "user_id": 1
     },
     {
-        "title": "Clean Code",
-        "contents": "This will help you produce Clean Code and make your code easier to read.  You always want to keep up with current standards.",
-        "date_created": "02/14/2023",
+        "title": "Introduction to Node.js",
+        "contents": "Node.js is the next step in learning web development.  It is used to make your website interactive.  It is a great way to make your website more dynamic.",
+        "date_created": "02/14/2013",
         "user_id": 4
     }
 ]
